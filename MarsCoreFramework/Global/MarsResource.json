@@ -1,0 +1,11 @@
+{
+  
+    "Urls": {
+
+      "ExcelPath": "D:\\Project_Automation\\MarsFrameworkCore\\MarsCoreFramework\\MarsCoreFramework\\MarsCoreFramework\\TestData\\TestData.xlsx",
+      "ScreenShot": "D:\\Project_Automation\\MarsFrameworkCore\\MarsCoreFramework\\MarsCoreFramework\\MarsCoreFramework\\Screenshot\\",
+        "Browser" :  "1"
+
+    }
+  
+}
