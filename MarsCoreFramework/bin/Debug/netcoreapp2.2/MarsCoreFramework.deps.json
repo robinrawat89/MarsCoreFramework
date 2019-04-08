@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "9af261d053ad8b984d8991fe925be10efbc3e153"
+    "signature": "5c6d59feffb3b4f4e0fd18a99a6b24cdcac421fa"
   },
   "compilationOptions": {},
   "targets": {
@@ -16,6 +16,7 @@
           "Selenium.Support": "3.141.0",
           "Selenium.WebDriver": "3.141.0",
           "Selenium.WebDriver.ChromeDriver": "73.0.3683.68",
+          "Selenium.WebDriver.GeckoDriver.Win64": "0.24.0",
           "System.Text.Encoding.CodePages": "4.5.1"
         },
         "runtime": {
@@ -445,6 +446,7 @@
         }
       },
       "Selenium.WebDriver.ChromeDriver/73.0.3683.68": {},
+      "Selenium.WebDriver.GeckoDriver.Win64/0.24.0": {},
       "System.AppContext/4.1.0": {
         "dependencies": {
           "System.Runtime": "4.3.0"
@@ -1186,6 +1188,13 @@
       "sha512": "sha512-DyCls7kkAkAUxDiG7e/yJNSx9OfeU+Rv5Ga/ypQ0xYUCxlv4sKkf1mMkF3nRGEn8K3YBLgSbTUOlNThv0D0XqA==",
       "path": "selenium.webdriver.chromedriver/73.0.3683.68",
       "hashPath": "selenium.webdriver.chromedriver.73.0.3683.68.nupkg.sha512"
+    },
+    "Selenium.WebDriver.GeckoDriver.Win64/0.24.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5KZBCZn8Pow2XDcYJEVrZx3wns5lkYxxvcqmjxXpr9Nc8lGxZduG3W8SQcEeCfG+c4p0YzHxRFcKbOVbT4hNjA==",
+      "path": "selenium.webdriver.geckodriver.win64/0.24.0",
+      "hashPath": "selenium.webdriver.geckodriver.win64.0.24.0.nupkg.sha512"
     },
     "System.AppContext/4.1.0": {
       "type": "package",

@@ -684,6 +684,12 @@
           "build/Selenium.WebDriver.ChromeDriver.targets": {}
         }
       },
+      "Selenium.WebDriver.GeckoDriver.Win64/0.24.0": {
+        "type": "package",
+        "build": {
+          "build/Selenium.WebDriver.GeckoDriver.Win64.targets": {}
+        }
+      },
       "System.AppContext/4.1.0": {
         "type": "package",
         "dependencies": {
@@ -2851,6 +2857,19 @@
         "driver/win32/chromedriver.exe",
         "selenium.webdriver.chromedriver.73.0.3683.68.nupkg.sha512",
         "selenium.webdriver.chromedriver.nuspec"
+      ]
+    },
+    "Selenium.WebDriver.GeckoDriver.Win64/0.24.0": {
+      "sha512": "5KZBCZn8Pow2XDcYJEVrZx3wns5lkYxxvcqmjxXpr9Nc8lGxZduG3W8SQcEeCfG+c4p0YzHxRFcKbOVbT4hNjA==",
+      "type": "package",
+      "path": "selenium.webdriver.geckodriver.win64/0.24.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/Selenium.WebDriver.GeckoDriver.Win64.targets",
+        "driver/geckodriver.exe",
+        "selenium.webdriver.geckodriver.win64.0.24.0.nupkg.sha512",
+        "selenium.webdriver.geckodriver.win64.nuspec"
       ]
     },
     "System.AppContext/4.1.0": {
@@ -5944,6 +5963,7 @@
       "Selenium.Support >= 3.141.0",
       "Selenium.WebDriver >= 3.141.0",
       "Selenium.WebDriver.ChromeDriver >= 73.0.3683.68",
+      "Selenium.WebDriver.GeckoDriver.Win64 >= 0.24.0",
       "System.Text.Encoding.CodePages >= 4.5.1"
     ]
   },
@@ -6025,6 +6045,10 @@
           "Selenium.WebDriver.ChromeDriver": {
             "target": "Package",
             "version": "[73.0.3683.68, )"
+          },
+          "Selenium.WebDriver.GeckoDriver.Win64": {
+            "target": "Package",
+            "version": "[0.24.0, )"
           },
           "System.Text.Encoding.CodePages": {
             "target": "Package",
