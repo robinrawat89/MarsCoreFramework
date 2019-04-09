@@ -1,3 +1,4 @@
+using MarsCoreFramework.AbstractMethods;
 using MarsCoreFramework.Global;
 using MarsCoreFramework.Pages;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -50,12 +51,41 @@ namespace MarsCoreFramework
             //Using Firefox
             //using (GlobalDefinitions.driver = new FirefoxDriver(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)))
             {
+                string Profile = "Profile";
+                //sign in
+                SignIn newSignIn = new SignIn();
+                newSignIn.LoginSteps();
+                //MenuOption to Click
+                ClickMenu clickMenu = new ClickMenu();
+                clickMenu.clickMenuOptions(Profile);
+                //Udate the profile
+                Profile updateProfile = new Profile();
+                updateProfile.EditProfile();
 
+            }
+
+        }
+
+        [TestMethod]
+        public void languageProfile()
+        {   //using Chrome
+            using (GlobalDefinitions.driver = new ChromeDriver(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)))
+            //Using Firefox
+            //using (GlobalDefinitions.driver = new FirefoxDriver(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)))
+            {
+                string Profile = "Profile";
+                string addNewOption = "Skills";
+
+                //sign in
                 SignIn newSignIn = new SignIn();
                 newSignIn.LoginSteps();
 
-                Profile updateProfile = new Profile();
-                updateProfile.EditProfile();
+                //MenuOption to Click
+                ClickMenu clickMenu = new ClickMenu();
+                clickMenu.clickMenuOptions(Profile);
+
+                //click on options Language, Skills, Education, Certifications
+                clickMenu.clickSubMenuOptions(addNewOption);
 
             }
 

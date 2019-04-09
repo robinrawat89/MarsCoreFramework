@@ -1,4 +1,5 @@
-﻿using MarsCoreFramework.Global;
+﻿using MarsCoreFramework.AbstractMethods;
+using MarsCoreFramework.Global;
 using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
@@ -71,7 +72,8 @@ namespace MarsCoreFramework.Pages
             //GlobalDefinitions.wait(5);
 
             //click on Profile from menu
-            clickProfile.Click();
+            
+            //clickProfile.Click();
 
             //Click on user name 
             clickUserName.Click();
@@ -94,6 +96,7 @@ namespace MarsCoreFramework.Pages
             //Click Availiable  Edit Icon
 
             availabilityTimeEditIcon.Click();
+            Thread.Sleep(5000);
             //GlobalDefinitions.wait(5);
 
             //Availability Time option
