@@ -73,8 +73,8 @@ namespace MarsCoreFramework
             //Using Firefox
             //using (GlobalDefinitions.driver = new FirefoxDriver(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)))
             {
-                string Profile = "Profile";
-                string addNewOption = "Skills";
+                string ProfileMenuOption = "Profile";
+                string addNewOption = "Languages";
 
                 //sign in
                 SignIn newSignIn = new SignIn();
@@ -82,7 +82,7 @@ namespace MarsCoreFramework
 
                 //MenuOption to Click
                 ClickMenu clickMenu = new ClickMenu();
-                clickMenu.clickMenuOptions(Profile);
+                clickMenu.clickMenuOptions(ProfileMenuOption);
 
                 //click on options Language, Skills, Education, Certifications
                 clickMenu.clickSubMenuOptions(addNewOption);
