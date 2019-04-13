@@ -14,8 +14,7 @@ namespace MarsCoreFramework.Global
     {
         //Initialise the browser
         public static IWebDriver driver { get; set; }
-
-
+        
         public static string ReadJson()
         {
             var WebClient = new WebClient();
@@ -31,13 +30,12 @@ namespace MarsCoreFramework.Global
             var WebClient = new WebClient();
             var Browserjson = WebClient.DownloadString(@"D:\Project_Automation\MarsFrameworkCore\MarsCoreFramework\MarsCoreFramework\MarsCoreFramework\Global\MarsResource.json");
             dynamic result = Newtonsoft.Json.JsonConvert.DeserializeObject(Browserjson);
-            var path = result.Urls.ExcelPath;
+            var path = result.Urls.Browserjson;
             return path;
 
         }
 
-
-        public class ExcelOperations
+       public class ExcelOperations
         {
             static List<DataCollection> dataCol = new List<DataCollection>();
             private static DataTable ExcelToDataTable(string filename, string sheetName)
@@ -123,6 +121,9 @@ namespace MarsCoreFramework.Global
                 }
             }
 
-        }
+            
+       }
+
+        
     }
 }

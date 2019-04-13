@@ -1,0 +1,42 @@
+﻿2019-04-13T14:37:10.1697480+12:00;VSTestExecutionThread;Info;SpecFlow+Runner execution started
+2019-04-13T14:37:10.1698203+12:00;VSTestExecutionThread;Info;SpecFlow+Runner 3.0.255 in Framework netcore22 in x64 mode execution started
+2019-04-13T14:37:10.1698236+12:00;VSTestExecutionThread;Info;TestAdapter Location: D:\Project_Automation\MarsFrameworkCore\MarsCoreFramework\MarsCoreFramework\MarsCoreFramework\bin\Debug\netcoreapp2.2\TechTalk.SpecRun.VisualStudio.TestAdapter.dll
+2019-04-13T14:37:10.2022582+12:00;VSTestExecutionThread;Info;SpecRun: running tests in D:\Project_Automation\MarsFrameworkCore\MarsCoreFramework\MarsCoreFramework\MarsCoreFramework\bin\Debug\netcoreapp2.2\MarsCoreFramework.dll
+2019-04-13T14:37:10.2026011+12:00;VSTestExecutionThread;Info;Output folder configured to "D:\Project_Automation\MarsFrameworkCore\MarsCoreFramework\MarsCoreFramework\TestResults" (default)
+2019-04-13T14:37:10.2027352+12:00;VSTestExecutionThread;Info;Profile: 
+2019-04-13T14:37:10.2435564+12:00;VSTestExecutionThread;Info;Log file path: D:\Project_Automation\MarsFrameworkCore\MarsCoreFramework\MarsCoreFramework\TestResults\Unnamed project__2019-04-13T143710.log
+2019-04-13T14:37:10.2457169+12:00;VSTestExecutionThread;Error;Invalid project license: Project licenses cannot be used without assembly paths
+2019-04-13T14:37:10.2522705+12:00;VSTestExecutionThread;Info;SpecFlow+Runner Evaluation Mode: Please purchase at http://www.specflow.org/plus to remove test execution delay.
+2019-04-13T14:37:10.2614938+12:00;Thread#19;Info;Checking license
+2019-04-13T14:37:10.2618022+12:00;Thread#19;Error;Invalid project license: Project licenses cannot be used without assembly paths
+2019-04-13T14:37:10.2632217+12:00;Thread#19;Error;Invalid project license: Project licenses cannot be used without assembly paths
+2019-04-13T14:37:10.3036578+12:00;Thread#19;Info;Evaluation mode: test execution starts in 8 seconds... (this delay is removed in the registered version)
+2019-04-13T14:37:18.3043491+12:00;Thread#19;Info;Evaluation delay finished.
+2019-04-13T14:37:18.3081418+12:00;Thread#19;Info;License check completed
+2019-04-13T14:37:18.3084087+12:00;Thread#19;Info;starting test run
+2019-04-13T14:37:18.3603006+12:00;Thread#19;Info;Discovering target: Default
+2019-04-13T14:37:18.3625531+12:00:Test Suite Dump
+2019-04-13T14:37:18.3652960+12:00:#0: Unnamed project/ - 
+2019-04-13T14:37:18.3653970+12:00:End: Test Suite Dump
+2019-04-13T14:37:18.3903996+12:00:Thread#0:Scheduler: get next test for thread 0
+2019-04-13T14:37:18.3939731+12:00:Thread#:Scheduler: at the end of normal test queue
+2019-04-13T14:37:18.3940088+12:00:Thread#0:Scheduler: enumerator for thread is at end
+2019-04-13T14:37:18.3942677+12:00:Thread#0:Scheduler: No more tests for thread
+2019-04-13T14:37:18.4038064+12:00:Thread#-1:Scheduler: get next test for thread -1
+2019-04-13T14:37:18.4038354+12:00:Thread#:Scheduler: at the end of normal test queue
+2019-04-13T14:37:18.4038384+12:00:Thread#-1:Scheduler: enumerator for thread is at end
+2019-04-13T14:37:18.4056746+12:00;Thread#19;Info;test run finished
+2019-04-13T14:37:18.4058177+12:00;Thread#19;Info;publishing test results
+2019-04-13T14:37:18.4061435+12:00;Thread#19;Info;Not publishing results.
+2019-04-13T14:37:18.4063022+12:00;Thread#19;Info;test results published
+2019-04-13T14:37:18.4063691+12:00;Thread#19;Info;generating reports
+2019-04-13T14:37:18.5025412+12:00;Thread#19;Error;Failed fetching a single test assembly working directory.
+2019-04-13T14:37:18.5026895+12:00;Thread#19;Info;Failed generating reports
+2019-04-13T14:37:18.5115262+12:00:Total: 0
+2019-04-13T14:37:18.5150181+12:00:Succeeded: 0
+2019-04-13T14:37:18.5157920+12:00:Ignored: 0
+2019-04-13T14:37:18.5164464+12:00:Pending: 0
+2019-04-13T14:37:18.5172725+12:00:Skipped: 0
+2019-04-13T14:37:18.5179328+12:00:Failed: 0
+2019-04-13T14:37:18.5304069+12:00;VSTestExecutionThread;Info;Adding attachments to VSTest
+========== End of log file ==========

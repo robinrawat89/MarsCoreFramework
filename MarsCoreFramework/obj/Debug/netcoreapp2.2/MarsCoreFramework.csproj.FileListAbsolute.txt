@@ -6,9 +6,9 @@ D:\Project_Automation\MarsFrameworkCore\MarsCoreFramework\MarsCoreFramework\Mars
 D:\Project_Automation\MarsFrameworkCore\MarsCoreFramework\MarsCoreFramework\MarsCoreFramework\bin\Debug\netcoreapp2.2\MarsCoreFramework.runtimeconfig.dev.json
 D:\Project_Automation\MarsFrameworkCore\MarsCoreFramework\MarsCoreFramework\MarsCoreFramework\bin\Debug\netcoreapp2.2\MarsCoreFramework.dll
 D:\Project_Automation\MarsFrameworkCore\MarsCoreFramework\MarsCoreFramework\MarsCoreFramework\bin\Debug\netcoreapp2.2\MarsCoreFramework.pdb
+D:\Project_Automation\MarsFrameworkCore\MarsCoreFramework\MarsCoreFramework\MarsCoreFramework\obj\Debug\netcoreapp2.2\MarsCoreFramework.csprojAssemblyReference.cache
 D:\Project_Automation\MarsFrameworkCore\MarsCoreFramework\MarsCoreFramework\MarsCoreFramework\obj\Debug\netcoreapp2.2\MarsCoreFramework.csproj.CoreCompileInputs.cache
 D:\Project_Automation\MarsFrameworkCore\MarsCoreFramework\MarsCoreFramework\MarsCoreFramework\obj\Debug\netcoreapp2.2\MarsCoreFramework.AssemblyInfoInputs.cache
 D:\Project_Automation\MarsFrameworkCore\MarsCoreFramework\MarsCoreFramework\MarsCoreFramework\obj\Debug\netcoreapp2.2\MarsCoreFramework.AssemblyInfo.cs
 D:\Project_Automation\MarsFrameworkCore\MarsCoreFramework\MarsCoreFramework\MarsCoreFramework\obj\Debug\netcoreapp2.2\MarsCoreFramework.dll
 D:\Project_Automation\MarsFrameworkCore\MarsCoreFramework\MarsCoreFramework\MarsCoreFramework\obj\Debug\netcoreapp2.2\MarsCoreFramework.pdb
-D:\Project_Automation\MarsFrameworkCore\MarsCoreFramework\MarsCoreFramework\MarsCoreFramework\obj\Debug\netcoreapp2.2\MarsCoreFramework.csprojAssemblyReference.cache

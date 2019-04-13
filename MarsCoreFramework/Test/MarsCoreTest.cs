@@ -2,11 +2,13 @@ using MarsCoreFramework.AbstractMethods;
 using MarsCoreFramework.Global;
 using MarsCoreFramework.Pages;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Edge;
 using OpenQA.Selenium.Firefox;
 using System.IO;
 using System.Reflection;
+using static MarsCoreFramework.Global.CommonMethods;
 
 namespace MarsCoreFramework
 {
@@ -25,6 +27,8 @@ namespace MarsCoreFramework
 
                 SignUp newSignUp = new SignUp();
                 newSignUp.Register();
+                //taking screenshot
+                SaveScreenShotClass.SaveScreenshot(GlobalDefinitions.driver, "SignUpSuccessfully");
 
             }
         }
@@ -39,6 +43,8 @@ namespace MarsCoreFramework
 
                 SignIn newSignIn = new SignIn();
                 newSignIn.LoginSteps();
+                //taking screenshot
+                SaveScreenShotClass.SaveScreenshot(GlobalDefinitions.driver, "SignInSuccessfully");
 
             }
 
@@ -58,9 +64,16 @@ namespace MarsCoreFramework
                 //MenuOption to Click
                 ClickMenu clickMenu = new ClickMenu();
                 clickMenu.clickMenuOptions(Profile);
+
+                //taking screenshot
+                SaveScreenShotClass.SaveScreenshot(GlobalDefinitions.driver, "BeforeProfileUpdate");
+
                 //Udate the profile
                 Profile updateProfile = new Profile();
                 updateProfile.EditProfile();
+
+                //taking screenshot
+                SaveScreenShotClass.SaveScreenshot(GlobalDefinitions.driver, "UpdateProfileSuccessfully");
 
             }
 
@@ -75,6 +88,8 @@ namespace MarsCoreFramework
             {
                 string ProfileMenuOption = "Profile";
                 string addNewOption = "Languages";
+                //string langauge = "English";
+                //string dropdownOption = "Fluent";
 
                 //sign in
                 SignIn newSignIn = new SignIn();
@@ -86,6 +101,17 @@ namespace MarsCoreFramework
 
                 //click on options Language, Skills, Education, Certifications
                 clickMenu.clickSubMenuOptions(addNewOption);
+
+                //click on Add New button
+                ProfileOptions addNewButton = new ProfileOptions();
+                addNewButton.clickAddNew(addNewOption);
+
+
+                //add langauge
+                ProfileLanguage addLangauge = new ProfileLanguage();
+                addLangauge.addNewLanguage();
+                //taking screenshot
+                SaveScreenShotClass.SaveScreenshot(GlobalDefinitions.driver, "LangaugeAddedSuccessfully");
 
             }
 

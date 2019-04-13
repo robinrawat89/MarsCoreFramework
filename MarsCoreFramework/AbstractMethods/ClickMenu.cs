@@ -8,6 +8,8 @@ namespace MarsCoreFramework.AbstractMethods
     public class ClickMenu
     {
         ////click Profile Option Dashboard, Profile, Manage Listing, Manage Request
+        
+
         public void clickMenuOptions(string menuOptions)
         {
             var clickMenu = new ClickMenu();

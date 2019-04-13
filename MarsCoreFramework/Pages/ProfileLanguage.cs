@@ -25,13 +25,15 @@ namespace MarsCoreFramework.Pages
 
 
         //Adding New Language
-        public void addNewLanguage(string language, string languageLevel)
+        public void addNewLanguage()
         {
+            GlobalDefinitions.ExcelOperations.PopulateInCollection(GlobalDefinitions.ReadJson(), "AddLanguage");
+
             //Enter value in Add Language field
             //IWebElement addLanguageName = Global.GlobalDefinitions.driver.FindElement(By.XPath("//*[contains(@class,'active') and contains(@class, 'tab')]/div/div[2]/div/div/div[1]/input"));
             addLanguageName.Clear();
             addLanguageName.Click();
-            addLanguageName.SendKeys(language);
+            addLanguageName.SendKeys(GlobalDefinitions.ExcelOperations.ReadData(1, "Language"));
 
             //Select value for level
             //IWebElement DropDownList = Global.GlobalDefinitions.driver.FindElement(By.XPath("//*[contains(@class,'active') and contains(@class, 'tab')]/div/div[2]/div/div/div[2]//select"));
@@ -39,7 +41,7 @@ namespace MarsCoreFramework.Pages
             int optionCount = options.Count();
             for (int i = 0; i < optionCount; i++)
             {
-                if (options[i].Text == languageLevel)
+                if (options[i].Text == GlobalDefinitions.ExcelOperations.ReadData(1, "LanguageLevel"))
                 {
                     options[i].Click();
                 }
@@ -65,11 +67,9 @@ namespace MarsCoreFramework.Pages
             foreach (IWebElement row in tableRow)
             {
                 var p = row.Text;
-                if (row.Text.Contains(language))
+                if (row.Text.Contains(GlobalDefinitions.ExcelOperations.ReadData(1, "Language")))
                 {
                     languageFound = true;
-                    //SaveScreenShotClass.SaveScreenshot(Global.GlobalDefinitions.driver, "LanguageAdded");
-                    //CommonMethods.test.Log(LogStatus.Pass, "Test Passed, Added a Language Successfully");
                     break;
                 }
                 //else;
