@@ -85,10 +85,10 @@ namespace MarsCoreFramework.Pages
 
         //Deleting a Language
 
-        public void deleteLanguage(string language)
+        public void deleteLanguage()
         {
             var deleteLanguage = new Profile();
-            IWebElement barXpath = GlobalDefinitions.driver.FindElement(By.XPath("//tr[.//td='" + language + "']/td[3]/span[2]/i"));
+            IWebElement barXpath = GlobalDefinitions.driver.FindElement(By.XPath("//tr[.//td='" + GlobalDefinitions.ExcelOperations.ReadData(1, "Language") + "']/td[3]/span[2]/i"));
             //IWebElement _menuClickoption = deleteLanguage.deleteLanguageOptions(barXpath);
             barXpath.Click();
             Thread.Sleep(5000);
@@ -97,7 +97,7 @@ namespace MarsCoreFramework.Pages
         }
                 
         //Verify Langauge is deleted from profile
-        public void languageDeletedConfirm(string langauge)
+        public void languageDeletedConfirm()
         {
             bool languagePresent = false;
             IWebElement tableElement = GlobalDefinitions.driver.FindElement(By.XPath("//*[contains(@class,'active') and contains(@class, 'tab')]/div/div[2]/div/table"));
@@ -106,7 +106,7 @@ namespace MarsCoreFramework.Pages
             {
                 var p = row.Text;
 
-                if (row.Text.Contains(langauge))
+                if (row.Text.Contains(GlobalDefinitions.ExcelOperations.ReadData(1, "Language")))
                 {
                     languagePresent = true;
                     //SaveScreenShotClass.SaveScreenshot(Driver.webDriver, "LanguageNotDeleted");

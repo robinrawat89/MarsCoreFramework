@@ -15,8 +15,6 @@ namespace MarsCoreFramework
     [TestClass]
     public class MarsCoreTest
     {
-        //[ClassInitialize]
-        
         [TestMethod]
         public void SignUp()
         {   //using Chrome
@@ -88,8 +86,6 @@ namespace MarsCoreFramework
             {
                 string ProfileMenuOption = "Profile";
                 string addNewOption = "Languages";
-                //string langauge = "English";
-                //string dropdownOption = "Fluent";
 
                 //sign in
                 SignIn newSignIn = new SignIn();
@@ -116,11 +112,78 @@ namespace MarsCoreFramework
             }
 
         }
+        [TestMethod]
+        public void skillProfile()
+        {   //using Chrome
+            using (GlobalDefinitions.driver = new ChromeDriver(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)))
+            //Using Firefox
+            //using (GlobalDefinitions.driver = new FirefoxDriver(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)))
+            {
+                string ProfileMenuOption = "Profile";
+                string addNewOption = "Skills";
 
-        //[AssemblyCleanup]
-        //public static void TearDown()
-        //{
-        //    GlobalDefinitions.driver.Quit();
-        //}
+                //sign in
+                SignIn newSignIn = new SignIn();
+                newSignIn.LoginSteps();
+
+                //MenuOption to Click
+                ClickMenu clickMenu = new ClickMenu();
+                clickMenu.clickMenuOptions(ProfileMenuOption);
+
+                //click on options Language, Skills, Education, Certifications
+                clickMenu.clickSubMenuOptions(addNewOption);
+
+                //click on Add New button
+                ProfileOptions addNewButton = new ProfileOptions();
+                addNewButton.clickAddNew(addNewOption);
+
+                //add and verify Skill
+                ProfileSkill addSkill = new ProfileSkill();
+                addSkill.addNewSkill();
+                addSkill.rowSkillPresent();
+
+
+            }
+
+            //[AssemblyCleanup]
+            //public static void TearDown()
+            //{
+            //    GlobalDefinitions.driver.Quit();
+            //}
+        }
+        [TestMethod]
+        public void educationProfile()
+        {   //using Chrome
+            using (GlobalDefinitions.driver = new ChromeDriver(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)))
+            //Using Firefox
+            //using (GlobalDefinitions.driver = new FirefoxDriver(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)))
+            {
+                string ProfileMenuOption = "Profile";
+                string addNewOption = "Education";
+
+                //sign in
+                SignIn newSignIn = new SignIn();
+                newSignIn.LoginSteps();
+
+                //MenuOption to Click
+                ClickMenu clickMenu = new ClickMenu();
+                clickMenu.clickMenuOptions(ProfileMenuOption);
+
+                //click on options Language, Skills, Education, Certifications
+                clickMenu.clickSubMenuOptions(addNewOption);
+
+                //click on Add New button
+                ProfileOptions addNewButton = new ProfileOptions();
+                addNewButton.clickAddNew(addNewOption);
+
+                //add and verify Skill
+                ProfileEducation addEducation = new ProfileEducation();
+                addEducation.addNewEducation();
+                addEducation.rowEducationPresent();
+
+
+
+            }
+        }
     }
 }
