@@ -51,9 +51,9 @@ namespace MarsCoreFramework
         [TestMethod]
         public void UpdateProfile()
         {   //using Chrome
-            using (GlobalDefinitions.driver = new ChromeDriver(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)))
+            //using (GlobalDefinitions.driver = new ChromeDriver(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)))
             //Using Firefox
-            //using (GlobalDefinitions.driver = new FirefoxDriver(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)))
+            using (GlobalDefinitions.driver = new FirefoxDriver(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)))
             {
                 string Profile = "Profile";
                 //sign in
@@ -180,6 +180,41 @@ namespace MarsCoreFramework
                 ProfileEducation addEducation = new ProfileEducation();
                 addEducation.addNewEducation();
                 addEducation.rowEducationPresent();
+
+
+
+            }
+        }
+
+        [TestMethod]
+        public void certificateProfile()
+        {   //using Chrome
+            using (GlobalDefinitions.driver = new ChromeDriver(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)))
+            //Using Firefox
+            //using (GlobalDefinitions.driver = new FirefoxDriver(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)))
+            {
+                string ProfileMenuOption = "Profile";
+                string addNewOption = "Certifications";
+
+                //sign in
+                SignIn newSignIn = new SignIn();
+                newSignIn.LoginSteps();
+
+                //MenuOption to Click
+                ClickMenu clickMenu = new ClickMenu();
+                clickMenu.clickMenuOptions(ProfileMenuOption);
+
+                //click on options Language, Skills, Education, Certifications
+                clickMenu.clickSubMenuOptions(addNewOption);
+
+                //click on Add New button
+                ProfileOptions addNewButton = new ProfileOptions();
+                addNewButton.clickAddNew(addNewOption);
+
+                //add and verify Skill
+                ProfileCertification addCertification = new ProfileCertification();
+                addCertification.addNewCertification();
+                addCertification.rowCertificatePresent();
 
 
 

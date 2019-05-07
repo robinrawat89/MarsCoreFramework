@@ -60,7 +60,16 @@ namespace MarsCoreFramework.Pages
         //click on Profile
         private IWebElement clickProfile => GlobalDefinitions.driver.FindElement(By.XPath("//*[@class='nav-secondary']//a[text()[normalize-space(.)='Profile']]"));
 
-        //*[@class='nav-secondary']//a[text()[normalize-space(.)='Profile']]
+        //click on Edit description
+        private IWebElement editDescription => GlobalDefinitions.driver.FindElement(By.XPath("//*[@class='eight wide column']/div/div/div/h3/span/i"));
+
+        //click on textArea
+        private IWebElement textDescription => GlobalDefinitions.driver.FindElement(By.XPath("//*[@name='value']"));
+
+        //click on descritpionSave
+        private IWebElement descritpionSave => GlobalDefinitions.driver.FindElement(By.XPath("//*[@class='ui twelve wide column']/button"));
+        
+         
 
         #endregion
 
@@ -160,8 +169,15 @@ namespace MarsCoreFramework.Pages
                     doubleEarn.Click();
                     break;
             }
-        }
 
+            //Add or edit the descritpion
+            editDescription.Click();
+            textDescription.Clear();
+            textDescription.SendKeys(GlobalDefinitions.ExcelOperations.ReadData(1, "Description"));
+            descritpionSave.Click();
+
+        }
+        
         
     }
 }
